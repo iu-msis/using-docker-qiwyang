@@ -34,7 +34,7 @@
   <br><br>
 
   <div class="container">
-    <table class="table">
+    <table id="taskTable" class="table">
      <thead class="header">
        <tr>
          <th scope="col" id="text">Tile</th>
@@ -103,6 +103,10 @@
     </div>
    </form>
   </div>
-
+ <script src="../js/tablesort.min.js"></script>
+ <script>
+ //Table sort plugin http://tristen.ca/tablesort/demo/ //
+  new Tablesort(document.getElementById('taskTable'));
+ </script>
 </body>
 </html>
