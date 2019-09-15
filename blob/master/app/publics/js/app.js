@@ -18,6 +18,18 @@ fetch('https://randomuser.me/api/?result=1')
          name = createUser('name');
          dob = createUser('dob');
          patientID = createUser('patientID');
+<<<<<<< HEAD
+=======
+     img.src = user.picture.large;
+     patientID.innerHTML = `<br><br>Patient ID: ${user.id.value}`;
+     name.innerHTML = `<br><br>Name: ${user.name.first} ${user.name.last}`;
+     dob.innerHTML = `<br><br>Date of Birth: ${user.dob.date}`;
+     append(br, img);
+     append(br, patientID);
+     append(br, name);
+     append(br, dob);
+     append(document.getElementById('users'), br);
+>>>>>>> 9ab77d1ca9749c77dd5041609a50391f546ae25a
    })
  })
 
