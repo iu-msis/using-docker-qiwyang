@@ -37,8 +37,16 @@
      <br><br>
      <h3>Personal Information</h3>
      <br>
-     <p id="users"></p>
-  </div>
+     <div id="vue-app">
+       <img :src="image"><br><br>
+       <div>Name: {{ fullname }}</div><br>
+       <div>Gender: {{ gender }}</div><br>
+       <div>Date of Birth: {{ dob }}</div><br>
+       <div>Origin: {{ origin }}</div><br>
+       <div>Email: <a href="mailto:">{{ email }}</a></div><br>
+       <button @click="fetchData" id="fetch-button" class="btn btn-primary my-2 my-sm-0">change!</button>
+     </div>
+   </div>
   </center>
 
 
